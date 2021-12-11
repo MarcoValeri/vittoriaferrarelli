@@ -12,15 +12,55 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: wphierarchy
 Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 */
-
 /*
 * Remove default padding and margin
 */
 * {
-    padding: 0;
-    margin: 0;
-}
+  padding: 0;
+  margin: 0; }
 
+/*
+* Create a function that converts
+* px to rem
+* @param $px 
+* @return int|float rem
+*/
+/*
+* Create a function that convers
+* rem to px
+* @param $rem
+* @return int|float rem
+*/
 .navbar {
-    background-color: #000;
-}
+  padding: 1rem;
+  text-align: center;
+  background-color: #000; }
+  .navbar__input {
+    display: none; }
+
+.menu-item {
+  display: inline;
+  font-size: 1.2rem;
+  margin: 1rem; }
+
+.menu-item a {
+  text-decoration: none;
+  color: #fff; }
+  .menu-item a:hover {
+    text-decoration: underline; }
+
+/*
+* Media Queries for screens
+* max-width: 767px
+*/
+@media (max-width: 767px) {
+  .navbar__menu {
+    display: none; }
+  .navbar__bar {
+    display: block;
+    width: .5rem;
+    padding: .1rem .5rem;
+    margin: .2rem;
+    background-color: #fff; }
+  input:checked ~ .navbar__menu {
+    display: block; } }

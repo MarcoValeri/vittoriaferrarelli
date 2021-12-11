@@ -28,4 +28,9 @@ function vittoriaferrarelli_enqueue_styles() {
 }
 add_action('wp_enqueue_scripts', 'vittoriaferrarelli_enqueue_styles');
 
+// Register Menu Locations
+register_nav_menus([
+    'main-menu' => esc_html__('Main Menu', 'vittoriaferrarelli'),
+]);
+
 ?>

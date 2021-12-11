@@ -15,11 +15,19 @@
     <body>
         <header>
             <nav class="navbar" role="navigation">
-                <?php
-                    $args = [
-                        'theme_location' => 'main-menu'
-                    ];
-                    wp_nav_menu($args);
-                ?>
+                <input id="show_menu" type="radio" class="navbar__input">
+                <label for="show_menu" class="navbar__label">
+                    <span class="navbar__bar"></span>
+                    <span class="navbar__bar"></span>
+                    <span class="navbar__bar"></span>
+                </label>
+                <section class="navbar__menu">
+                    <?php
+                        $args = [
+                            'theme_location' => 'main-menu'
+                        ];
+                        wp_nav_menu($args);
+                    ?>
+                </section>
             </nav>
         </header>

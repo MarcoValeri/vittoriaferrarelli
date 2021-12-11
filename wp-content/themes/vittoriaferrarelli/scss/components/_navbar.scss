@@ -1,0 +1,54 @@
+.navbar {
+    padding: 1rem;
+    text-align: center;
+    background-color: #000;
+
+    &__input {
+        display: none;
+    }
+
+}
+
+.menu-item {
+    display: inline;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+}
+
+/*
+* Media Queries for screens
+* max-width: 767px
+*/
+@media (max-width: 767px) {
+
+    .navbar {
+
+        &__menu {
+            display: none;
+        }
+
+        &__bar {
+            display: block;
+            width: .5rem;
+            padding: .1rem .5rem;
+            margin: .2rem;
+            background-color: #fff;
+        }
+
+    }
+
+    input:checked ~ .navbar__menu {
+        display: block;
+    }
+
+}

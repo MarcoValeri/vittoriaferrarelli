@@ -1,0 +1,21 @@
+/*
+* Create a function that converts
+* px to rem
+* @param $px 
+* @return int|float rem
+*/ 
+@function px_to_rem($px) {
+    $rem: $px / 16;
+    @return $rem + rem;
+}
+
+/*
+* Create a function that convers
+* rem to px
+* @param $rem
+* @return int|float rem
+*/
+@function rem_to_px($rem) {
+    $px: $rem * 16;
+    @return $px + px;
+}
