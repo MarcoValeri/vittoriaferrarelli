@@ -19,6 +19,9 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
   padding: 0;
   margin: 0; }
 
+body {
+  padding: .5rem; }
+
 /*
 * Create a function that converts
 * px to rem
@@ -31,10 +34,15 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
 * @param $rem
 * @return int|float rem
 */
+.font-painting-background {
+  background-image: url("images/painting_01.jpg");
+  -webkit-background-clip: text;
+  background-color: text;
+  color: transparent; }
+
 .navbar {
   padding: 1rem;
-  text-align: center;
-  background-color: #000; }
+  text-align: center; }
   .navbar__input {
     display: none; }
 
@@ -45,7 +53,7 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
 
 .menu-item a {
   text-decoration: none;
-  color: #fff; }
+  color: #000; }
   .menu-item a:hover {
     text-decoration: underline; }
 
@@ -62,5 +70,23 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
     padding: .1rem .5rem;
     margin: .2rem;
     background-color: #fff; }
-  input:checked ~ .navbar__menu {
+  .navbar__input:checked ~ .navbar__menu {
     display: block; } }
+
+/*
+* Colors
+* #F4743B;
+*/
+.header {
+  position: relative;
+  height: 95vh; }
+  .header__content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .header__title {
+    font-size: 6rem; }
+  .header__description {
+    font-size: 3rem; }

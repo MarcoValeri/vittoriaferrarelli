@@ -1,0 +1,26 @@
+/*
+* Colors
+* #F4743B;
+*/
+
+.header {
+    position: relative;
+    height: 95vh;
+
+    &__content {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 6rem;
+    }
+
+    &__description {
+        font-size: 3rem;
+    }
+
+}

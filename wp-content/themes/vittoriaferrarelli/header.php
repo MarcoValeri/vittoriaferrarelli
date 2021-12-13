@@ -13,7 +13,7 @@
         <?php wp_head(); ?>
     </head>
     <body>
-        <header>
+        <header class="header">
             <nav class="navbar" role="navigation">
                 <input id="show_menu" type="radio" class="navbar__input">
                 <label for="show_menu" class="navbar__label">
@@ -30,4 +30,8 @@
                     ?>
                 </section>
             </nav>
+            <section class="header__content">
+                <h1 class="header__title font-painting-background">Vittoria Ferrarelli</h1>
+                <h2 class="header__description font-painting-background">Pittrice, Scultrice, Artista</h2>
+            </section>
         </header>

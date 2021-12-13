@@ -16,15 +16,23 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
 /*
 * Remove default padding and margin
 */
-
-
 * {
     padding: 0;
     margin: 0;
 }
 
+body {
+    padding: .5rem;
+}
+
 // Import abstracts files
 @import "./abstracts/functions.scss";
 
+// Import base files
+@import "./base/typography";
+
 // Import components files
 @import "./components/navbar.scss";
+
+// Import layout files
+@import "./layout/header";
