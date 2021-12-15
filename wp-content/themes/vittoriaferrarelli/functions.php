@@ -48,6 +48,7 @@ function create_post_type() {
         'has_archive' => true,
         'rewrite' => ['slug' => 'quadri'],
         'show_in_rest' => true,
+        'supports' => ['title', 'editor', 'thumbnail']
     ]);
 
 }
