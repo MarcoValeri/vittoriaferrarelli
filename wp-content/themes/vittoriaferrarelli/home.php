@@ -1,13 +1,21 @@
 <!-- Include header.php and related code -->
 <?php get_header(); ?>
 
-<!-- Add main section -->
 <main class="quadri">
     <section class="quadri__title">
-        <h1 class="font-painting-background">Il paesaggio nei colori</h1>
+        <h1 class="font-painting-background">Ultimi quadri</h1>
     </section>
     <!-- Loop through the quadri and if exists display them --> 
-    <?php if (have_posts()) : while(have_posts()) : the_post(); ?>
+    <?php 
+        $args = [
+            'post_type' => 'quadri',
+            'posts_per_page' => 5,
+        ];
+
+        $query = new WP_Query($args);
+
+        if ($query->have_posts()) : while($query->have_posts()) : $query->the_post(); 
+    ?>
         <a class="link-no-decoration" href="<?php the_permalink(); ?>">
             <section class="quadri__container">
                 <?php the_title('<h1>', '</h1>'); ?>
