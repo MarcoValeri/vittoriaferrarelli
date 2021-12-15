@@ -1,0 +1,30 @@
+.quadro__container {
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.quadro__title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.quadro__content {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.quadro__image {
+    width: 100%;
+}
+
+.quadro__image img {
+    width: 80%;
+    height: auto;
+    border: 1px solid #000;
+    margin: 10px 0;
+    object-fit: cover;
+}

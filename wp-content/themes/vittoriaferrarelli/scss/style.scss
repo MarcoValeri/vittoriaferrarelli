@@ -35,8 +35,10 @@ body {
 @import "./components/navbar.scss";
 
 // Import layout files
+@import "./layout/content";
 @import "./layout/header";
 @import "./layout/footer";
 
 // Import page files;
 @import "./pages/quadri";
+@import "./pages/single-quadri";
