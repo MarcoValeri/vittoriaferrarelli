@@ -33,4 +33,25 @@ register_nav_menus([
     'main-menu' => esc_html__('Main Menu', 'vittoriaferrarelli'),
 ]);
 
+/**
+ * Add built-in function create_post_type() 
+ * adding the different custom post type
+ */
+function create_post_type() {
+
+    register_post_type('Quadri', [
+        'labels' => [
+            'name' => __('Quadri'),
+            'singular_name' => __('Quadro')
+        ],
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => ['slug' => 'quadri'],
+        'show_in_rest' => true,
+    ]);
+
+}
+
+add_action('init', 'create_post_type');
+
 ?>

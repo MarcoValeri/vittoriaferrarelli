@@ -12,3 +12,5 @@
         </p>
     </section>
 </footer>
+</body>
+</html>
