@@ -1,0 +1,35 @@
+.post {
+    
+    &__image {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    &__image img {
+        width: 60%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    &__title-main {
+        font-size: 3rem;
+    }
+
+    &__content {
+        line-height: 1.6;
+        font-size: 1.2rem;
+    }
+
+    h1,
+    h2,
+    h3 {
+        margin-top: 1.5rem;
+    }
+
+}

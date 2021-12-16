@@ -185,6 +185,32 @@ body {
   .quadri__container {
     padding: .5rem; } }
 
+.post__image {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem; }
+
+.post__image img {
+  width: 60%;
+  height: auto;
+  object-fit: cover; }
+
+.post__title {
+  text-align: center;
+  margin-bottom: 1rem; }
+
+.post__title-main {
+  font-size: 3rem; }
+
+.post__content {
+  line-height: 1.6;
+  font-size: 1.2rem; }
+
+.post h1,
+.post h2,
+.post h3 {
+  margin-top: 1.5rem; }
+
 .quadro__container {
   height: auto;
   display: flex;
