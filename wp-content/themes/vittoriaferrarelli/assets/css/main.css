@@ -1,0 +1,224 @@
+/*
+* Remove default padding and margin
+*/
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  padding: .5rem; }
+
+/*
+* Create a function that converts
+* px to rem
+* @param $px 
+* @return int|float rem
+*/
+/*
+* Create a function that convers
+* rem to px
+* @param $rem
+* @return int|float rem
+*/
+.font-painting-background {
+  background-image: url("../../images/painting_01.jpg");
+  -webkit-background-clip: text;
+  background-color: text;
+  color: transparent; }
+
+.link-no-decoration {
+  text-decoration: none;
+  color: #000; }
+
+.navbar {
+  padding: 1rem;
+  text-align: center; }
+  .navbar__input {
+    display: none; }
+
+.menu-item {
+  display: inline;
+  font-size: 1.2rem;
+  margin: 1rem; }
+
+.menu-item a {
+  text-decoration: none;
+  color: #000; }
+  .menu-item a:hover {
+    text-decoration: underline; }
+
+/*
+* Media Queries for screens
+* max-width: 767px
+*/
+@media (max-width: 767px) {
+  .navbar__menu {
+    display: none; }
+  .navbar__bar {
+    display: block;
+    width: .5rem;
+    padding: .1rem .5rem;
+    margin: .2rem;
+    background-color: #000; }
+  .navbar__input:checked ~ .navbar__menu {
+    display: block; } }
+
+.content {
+  margin: 2rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr .50fr;
+  column-gap: 1rem;
+  grid-template-areas: "content__container aside"; }
+
+.content__container {
+  grid-area: content__container; }
+
+.aside {
+  grid-area: aside; }
+
+/*
+* Media Queries
+* max-width: 1024px
+*/
+@media (max-width: 1024px) {
+  .content {
+    margin: .5rem;
+    padding: .5rem;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    grid-template-areas: "content__container" "aside"; } }
+
+.header {
+  position: relative;
+  height: 95vh; }
+  .header__content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .header__title {
+    font-size: 6rem; }
+  .header__description {
+    font-size: 3rem; }
+
+/*
+* Media Queries
+* max-width: 480px
+*/
+@media (max-width: 480px) {
+  .header__title {
+    font-size: 4rem; }
+  .header__description {
+    font-size: 2rem; } }
+
+.footer {
+  position: relative;
+  height: 30vh;
+  background-color: #f7f7f7; }
+  .footer__content {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.heart {
+  color: #ff0000; }
+
+.quadri {
+  margin: 2rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.quadri__title {
+  width: 80%;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem; }
+
+.quadri__container {
+  width: 25rem;
+  height: 25rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #000; }
+
+.quadri__container-image img {
+  width: 80%;
+  height: auto;
+  max-height: 15rem; }
+
+/*
+* Media Queries
+* max-width: 480px
+*/
+@media (max-width: 480px) {
+  .quadri {
+    margin: .5rem;
+    padding: .5rem; }
+  .quadri__title {
+    font-size: 1.5rem; }
+  .quadri__container {
+    padding: .5rem; } }
+
+.post__image {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem; }
+
+.post__image img {
+  width: 60%;
+  height: auto;
+  object-fit: cover; }
+
+.post__title {
+  text-align: center;
+  margin-bottom: 1rem; }
+
+.post__title-main {
+  font-size: 3rem; }
+
+.post__content {
+  line-height: 1.6;
+  font-size: 1.2rem; }
+
+.post h1,
+.post h2,
+.post h3 {
+  margin-top: 1.5rem; }
+
+.quadro__container {
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; }
+
+.quadro__title {
+  font-size: 2rem;
+  margin-bottom: 2rem; }
+
+.quadro__content {
+  margin-bottom: 2rem;
+  font-size: 1.2rem; }
+
+.quadro__image {
+  width: 100%; }
+
+.quadro__image img {
+  width: 80%;
+  height: auto;
+  border: 1px solid #000;
+  margin: 10px 0;
+  object-fit: cover; }

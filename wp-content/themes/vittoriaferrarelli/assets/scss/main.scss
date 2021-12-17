@@ -1,0 +1,30 @@
+/*
+* Remove default padding and margin
+*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: .5rem;
+}
+
+// Import abstracts files
+@import "./abstracts/functions.scss";
+
+// Import base files
+@import "./base/typography";
+
+// Import components files
+@import "./components/navbar.scss";
+
+// Import layout files
+@import "./layout/content";
+@import "./layout/header";
+@import "./layout/footer";
+
+// Import page files;
+@import "./pages/quadri";
+@import "./pages/post";
+@import "./pages/single-quadri";
