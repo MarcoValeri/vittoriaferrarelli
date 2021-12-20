@@ -20,6 +20,9 @@ body {
 * @param $rem
 * @return int|float rem
 */
+/*
+* Colours
+*/
 .font-painting-background {
   background-image: url("../../images/painting_01.jpg");
   -webkit-background-clip: text;
@@ -29,6 +32,12 @@ body {
 .link-no-decoration {
   text-decoration: none;
   color: #000; }
+
+.link-hover:hover {
+  color: #ee7b30; }
+
+.paragraph {
+  line-height: 1.6; }
 
 .navbar {
   padding: 1rem;
@@ -126,6 +135,55 @@ body {
 
 .heart {
   color: #ff0000; }
+
+.archive {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .archive__details {
+    width: 100%;
+    padding: 1rem; }
+    .archive__details-title {
+      font-size: 2rem; }
+  .archive__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0rem;
+    padding: .5rem; }
+  .archive__container-title {
+    margin: 0rem 0rem 2rem 0rem; }
+    .archive__container-title-main {
+      font-size: 2rem; }
+  .archive__description {
+    display: grid;
+    grid-template-columns: 0.35fr 1fr;
+    column-gap: .5rem;
+    grid-template-areas: "archive__description-img archive__description-content"; }
+  .archive__description-img {
+    grid-area: archive__description-img; }
+  .archive__description-img img {
+    width: 100%;
+    height: auto; }
+  .archive__description-content {
+    grid-area: archive__description-content; }
+
+/*
+* Media Queries
+* max-width: 767px
+*/
+@media (max-width: 767px) {
+  .archive__description {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    grid-template-areas: "archive__description-img" "archive__description-content"; }
+    .archive__description-img img {
+      width: 50%;
+      margin-bottom: 1rem; } }
 
 .quadri {
   margin: 2rem;

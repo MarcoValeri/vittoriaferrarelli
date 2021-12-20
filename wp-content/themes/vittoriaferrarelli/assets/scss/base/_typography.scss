@@ -9,3 +9,11 @@
     text-decoration: none;
     color: #000;
 }
+
+.link-hover:hover {
+    color: $color_link;
+}
+
+.paragraph {
+    line-height: 1.6;
+}
