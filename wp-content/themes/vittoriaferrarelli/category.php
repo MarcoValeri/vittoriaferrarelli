@@ -10,7 +10,7 @@
             </section>
             <!-- Loop through the content --> 
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <a class="archive__container link-no-decoration link-hover" href="<?php esc_url(get_permalink()) ?>">
+                <a class="archive__container link-no-decoration link-hover" href="<?php the_permalink(); ?>">
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                         <section class="archive__container-title">
                             <?php the_title('<h2 class="archive__container-title-main">', '</h2>'); ?>
