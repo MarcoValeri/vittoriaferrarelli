@@ -4,18 +4,22 @@
 <!-- Add main section -->
 <main class="content">
     <section class="content__container">
-        <section class="single-post__container">
-            <?php the_title('<h1 class="single-post__title">', '</h1>'); ?>
-            <section class="single-post__image">
-                <?php the_post_thumbnail(); ?>
+        <!-- Loop through the pages if them exists --> 
+        <?php if (have_posts()) : while(have_posts()) : the_post(); ?>
+            <section class="post">
+                <section class="post__image">
+                    <?php the_post_thumbnail(); ?>
+                </section>
+                <section class="post__title">
+                    <?php the_title('<h1 class="post__title-main">', '</h1>'); ?>
+                </section>
+                <section class="post__content">
+                    <?php the_content(); ?>
+                </section>
             </section>
-            <section class="single-post__content paragraph">
-                <?php the_content(); ?>
-            </section>
-        </section>
+        <?php endwhile; endif; ?>
     </section>
-    <aside class="aside">
-    </aside>
+    <aside class="aside"></aside>
 </main>
 
 
