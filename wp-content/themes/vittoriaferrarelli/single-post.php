@@ -19,7 +19,8 @@
             </section>
         <?php endwhile; endif; ?>
     </section>
-    <aside class="aside"></aside>
+    <!-- Add sidebar --> 
+    <?php get_sidebar(); ?>
 </main>
 
 

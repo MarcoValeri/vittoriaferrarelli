@@ -28,8 +28,8 @@
             <?php endwhile; endif; ?>
         </section>
     </section>
-    <aside class="aside">
-    </aside>
+    <!-- Add sidebar --> 
+    <?php get_sidebar(); ?>
 </main>
 
 <!-- Include footer.php and related code -->

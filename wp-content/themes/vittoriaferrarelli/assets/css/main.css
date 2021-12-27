@@ -84,7 +84,8 @@ body {
   grid-area: content__container; }
 
 .aside {
-  grid-area: aside; }
+  grid-area: aside;
+  padding: .5rem; }
 
 /*
 * Media Queries
@@ -97,6 +98,9 @@ body {
     grid-template-columns: 1fr;
     row-gap: 2rem;
     grid-template-areas: "content__container" "aside"; } }
+
+.widget {
+  margin-bottom: 1rem; }
 
 .header {
   position: relative;

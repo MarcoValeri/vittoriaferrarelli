@@ -57,4 +57,19 @@ function create_post_type() {
 
 add_action('init', 'create_post_type');
 
+// Setup Widget Area
+function vittoriaferrarelli_widgets_init() {
+    register_sidebar([
+        'name' => esc_html__('Main Sidebar', 'vittoriaferrarelli'),
+        'id' => 'main-sidebar',
+        'description' => esc_html__('Add widgets for main sidebar here', 'vittoriaferrarelli'),
+        'before_widget' => '<section class="widget">',
+        'after_widget' => '</section>',
+        'before_title' => '<h2 class="widget__title">',
+        'after_title' => '</h2>',
+    ]);
+}
+
+add_action('widgets_init', 'vittoriaferrarelli_widgets_init');
+
 ?>
